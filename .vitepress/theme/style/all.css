@@ -1,0 +1,10 @@
+body .mask-text{
+  font-size: 16vw;
+}
+@media screen and (max-width:1200px) {
+    body .mask-text{
+        font-size: 
+        26vw;
+    }
+  } 
+  

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vscode 配置 windows版 | embers blog</title>
+    <meta name="description" content="全栈进阶之路">
+    <link rel="stylesheet" href="/blog/assets/style.7104bb36.css">
+    <link rel="modulepreload" href="/blog/assets/chunks/AlgoliaSearchBox.c4c753d1.js">
+    <link rel="modulepreload" href="/blog/assets/app.2fc076cc.js">
+    <link rel="modulepreload" href="/blog/assets/docs_other_我得vscode配置.md.09ddf410.lean.js">
+    
+    <meta name="twitter:title" content="vscode 配置 windows版 | embers blog">
+  <meta property="og:title" content="vscode 配置 windows版 | embers blog">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme"><header class="nav-bar" data-v-22035cf8><div class="sidebar-button" data-v-22035cf8><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z" class></path></svg></div><a class="nav-bar-title" href="/blog/" aria-label="embers blog, back to home" data-v-22035cf8 data-v-6f1fa1d8><!----> embers blog</a><div class="flex-grow" data-v-22035cf8></div><div class="nav" data-v-22035cf8><nav class="nav-links" data-v-22035cf8 data-v-32f7c87e><!--[--><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>前端特效</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>css</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/gasp" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>gasp.js</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/anime" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>anime.js</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>基本功</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/basic/js/01-call_apply_bind" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>前端必会</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>docs</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/docs/react/react" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>react</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/docs/reactNative/index" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>reactNative</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><!--]--><!----><!----></nav></div><!--[--><!--[--><div class="algolia-search-box" id="docsearch"></div><!--]--><!--]--></header><aside class="sidebar" data-v-928cb7a2><nav class="nav-links nav" data-v-928cb7a2 data-v-32f7c87e><!--[--><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>前端特效</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>css</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/gasp" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>gasp.js</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/css/anime" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>anime.js</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>基本功</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/basic/js/01-call_apply_bind" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>前端必会</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><div class="item" data-v-32f7c87e><div class="nav-dropdown-link" data-v-32f7c87e data-v-2758153c><button class="button" data-v-2758153c><span class="button-text" data-v-2758153c>docs</span><span class="right button-arrow" data-v-2758153c></span></button><ul class="dialog" data-v-2758153c><!--[--><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/docs/react/react" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>react</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><li class="dialog-item" data-v-2758153c><div class="nav-dropdown-link-item" data-v-2758153c data-v-f8f29c4a><a class="item" href="/blog/docs/reactNative/index" data-v-f8f29c4a><span class="arrow" data-v-f8f29c4a></span><span class="text" data-v-f8f29c4a>reactNative</span><span class="icon" data-v-f8f29c4a><!----></span></a></div></li><!--]--></ul></div></div><!--]--><!----><!----></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><div class="sidebar-mask"></div><main class="page" data-v-338937e7><div class="container" data-v-338937e7><!--[--><!--]--><div style="position:relative;" class="content" data-v-338937e7><div><h3 id="vscode-配置-windows版" tabindex="-1">vscode 配置 windows版 <a class="header-anchor" href="#vscode-配置-windows版" aria-hidden="true">#</a></h3><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;workbench.colorTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SynthWave &#39;84&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.minimap.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;breadcrumbs.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.renderWhitespace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.iconTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;material-icon-theme&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;launch&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+
+    
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.fontFamily&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&#39;Fira Code&#39;, Consolas, &#39;Courier New&#39;, monospace&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.fontLigatures&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;window.zoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;terminal.integrated.shell.windows&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C:\\Windows\\System32\\cmd.exe&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[html]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HookyQR.beautify&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vsintellicode.modify.editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;automaticallyOverrodeDefaultValue&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;python.languageServer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Microsoft&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[javascript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HookyQR.beautify&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;emmet.includeLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;javascript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wxml&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;vue-html&quot;</span><span class="token operator">:</span><span class="token string">&quot;html&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;git.enableSmartCommit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[scss]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MikeBovenlander.formate&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.statusBar.visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;diffEditor.ignoreTrimWhitespace&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;better-comments.tags&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;!&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FF2D00&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;strikethrough&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transparent&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;?&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#3498DB&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;strikethrough&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transparent&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;//&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#474747&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;strikethrough&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transparent&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;todo&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#FF8C00&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;strikethrough&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transparent&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;tag&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;color&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#98C379&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;strikethrough&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;backgroundColor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;transparent&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;explorer.confirmDelete&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;[typescript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;[javascriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;[typescriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vscode.typescript-language-features&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;[json]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      
+
+
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HookyQR.beautify&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;files.associations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;*.cjson&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jsonc&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;*.wxss&quot;</span><span class="token operator">:</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;*.wxs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;*.js&quot;</span><span class="token operator">:</span><span class="token string">&quot;javascriptreact&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;minapp-vscode.disableAutoConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;emmet.extensionsPath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;cSpell.userWords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;chuanhua&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;findqueue&quot;</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;extensions.ignoreRecommendations&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;[vue]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;vetur.validation.template&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;vetur.validation.script&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;eslint.run&quot;</span><span class="token operator">:</span> <span class="token string">&quot;onType&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;eslint.options&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;extensions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;.vue&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;.ts&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;.tsx&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;.html&quot;</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;eslint.validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;typescript&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.codeActionsOnSave&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;source.fixAll.eslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[python]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ms-python.python&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[markdown]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;yzhang.markdown-all-in-one&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.suggestSelection&quot;</span><span class="token operator">:</span> <span class="token string">&quot;first&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;java.semanticHighlighting.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;files.autoSave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.startupEditor&quot;</span><span class="token operator">:</span> <span class="token string">&quot;newUntitledFile&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.activityBar.visible&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.sideBar.location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;java.configuration.runtimes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JavaSE-1.8&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C:\\Program Files\\Java\\jdk1.8.0_251&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;JavaSE-11&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C:\\Program Files\\Java\\jdk11&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;java.configuration.checkProjectSettingsExclusions&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;java.refactor.renameFromFileExplorer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;autoApply&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;files.autoGuessEncoding&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;explorer.confirmDragAndDrop&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;java.home&quot;</span><span class="token operator">:</span> <span class="token string">&quot;C:\\Program Files\\Java\\jdk11&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.renderControlCharacters&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="mac-版-vscode-配置" tabindex="-1">mac 版 vscode 配置 <a class="header-anchor" href="#mac-版-vscode-配置" aria-hidden="true">#</a></h3><div class="language-json"><pre><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;workbench.iconTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;material-icon-theme&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;workbench.colorTheme&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SynthWave &#39;84&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;git.autofetch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;breadcrumbs.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.minimap.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.renderWhitespace&quot;</span><span class="token operator">:</span> <span class="token string">&quot;none&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;files.autoSave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;onWindowChange&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;explorer.confirmDelete&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[typescriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vscode.typescript-language-features&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[typescript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;launch&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;configurations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;compounds&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;code-runner.executorMap&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;typescript&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/Users/apple/.npm-global/bin/ts-node&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;leetcode.endpoint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;leetcode-cn&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;leetcode.defaultLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;typescript&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;leetcode.workspaceFolder&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/Users/apple/.leetcode&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;leetcode.hint.configWebviewMarkdown&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;leetcode.hint.commandShortcut&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;git.enableSmartCommit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;javascript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;editor.fontLigatures&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;cSpell.userWords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;Activityindicator&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Catrgory&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Commentable&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Deilivery&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Fapiao&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Filep&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Goodlist&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Iphone&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;MERCHAN&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;MERCHANTSELF&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Navgation&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Navigations&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Orderdelete&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;PAGENOTFOUND&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Protocal&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Rebuy&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Rebuyable&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Receiveable&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Semibold&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Signedin&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Subsite&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Swiper&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;TRACKEVENTS&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;TRACKTRIGGER&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Unmount&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;WXSS&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Webh&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;Wxml&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;aspectfill&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;brandname&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;builtins&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;camelcase&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;categorys&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;comall&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;cond&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;currentlprice&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;dashdash&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;dayunit&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;endtime&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;eqeqeq&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;estored&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;from&#39;lodash&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;greentext&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;headphoto&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;hoursunit&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;idcard&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;inputbox&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;isnan&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;kanaslake&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;merchantinfo&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;merchantname&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;metainfo&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;miao&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;miniprogram&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;mixins&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;multiline&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;navicon&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;nbsp&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;noglob&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;originalprice&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;parens&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;preload&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;pricetag&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;pricetype&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;projectname&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;puzhehei&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;puzheheitest&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;quantitywith&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;reosurce&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;reslove&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;roomid&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;secondunit&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;starname&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;stormwind&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;stylelint&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;subistes&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;subpackages&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;subsites&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;taroify&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;tarojs&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;theirprice&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;toplimit&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;typeof&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;vslide&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;weapp&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;wechat&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;zxsy&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;tabnine.experimentalAutoImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[scss]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sasa.vscode-sass-format&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;typescript.updateImportsOnFileMove.enabled&quot;</span><span class="token operator">:</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[javascript]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;security.workspace.trust.untrustedFiles&quot;</span><span class="token operator">:</span> <span class="token string">&quot;open&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[javascriptreact]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;git.confirmSync&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;[html]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;esbenp.prettier-vscode&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;window.zoomLevel&quot;</span><span class="token operator">:</span> <span class="token number">-1</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div><footer class="page-footer" data-v-338937e7 data-v-4b207065><div class="edit" data-v-4b207065><div class="edit-link" data-v-4b207065 data-v-76b066b8><!----></div></div><div class="updated" data-v-4b207065><!----></div></footer><!----><!--[--><!--]--></div></main></div><!----><!--]--></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"basic_js_01-call_apply_bind.md\":\"ca42c546\",\"basic_nodejs_nodejs调试.md\":\"16622665\",\"docs_other_centos 部署 egg.js.md\":\"3ba19981\",\"docs_other_ajax封装.md\":\"a5eea55c\",\"docs_other_canvas.md\":\"74789ef3\",\"docs_other_ipfs星际文件系统部署静态页.md\":\"434d9ded\",\"docs_other_mac下npm全局问题.md\":\"a0647db2\",\"docs_other_nuxt笔记.md\":\"6a96ad84\",\"docs_other_webpack性能优化.md\":\"67cec99d\",\"docs_other_web抓包.md\":\"53a8fd0e\",\"docs_other_我得vscode配置.md\":\"09ddf410\",\"docs_other_瀑布流.md\":\"6800461b\",\"docs_react_life cycle.md\":\"d43907c8\",\"docs_react_react.md\":\"93c2f59a\",\"docs_react_render.md\":\"42ff7b58\",\"docs_react_setstate.md\":\"eec4c433\",\"docs_react_state_props.md\":\"a9a8b41b\",\"docs_react_super()_super(props).md\":\"34e2ea3f\",\"docs_reactnative_index.md\":\"84715a80\",\"docs_taro_taro-rn.md\":\"ea1decc6\",\"docs_taro_taro3.2项目升级.md\":\"b3029eae\",\"docs_vue_rollup.md\":\"9b14c25c\",\"docs_vue_vue-mustache.md\":\"5fbfbf8a\",\"docs_vue_vue2.6简答题.md\":\"a38b5970\",\"docs_vue_vue3.md\":\"64fd4682\",\"docs_vue_vue原理实现.md\":\"2350d049\",\"docs_vue_vue组件化.md\":\"6958cad5\",\"docs_vue_vue部署.md\":\"e9f02184\",\"index.md\":\"e0b002a0\"}")</script>
+    <script type="module" async src="/blog/assets/app.2fc076cc.js"></script>
+    
+  </body>
+</html>
