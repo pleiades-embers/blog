@@ -1,31 +1,60 @@
 import { test, expect } from "vitest";
 
+/**
+ * 原生实现
+ */
+Function.prototype.call=function(){
 
-Function.prototype.bind = function (obj, ...args) {
-  console.log(obj, 1111111);
-
-  // return (...arg2)=>{
-  //     // this.call(obj,...args,...arg2)
-  // }
-};
-
-function fn(a, b) {
-  this.xxx = 3;
-  console.log(a, b, this, arguments.length);
-  return a + b;
+  const self=this
+  return function(){
+    self()
+  }
 }
-// fn(1, 2)
-// console.log(xxx)
+
 const obj = {
   m: 0,
 };
-// fn.call(obj, 1, 2)
-// fn.apply(obj, [1, 2]);
-// fn.call(null, 1, 2)
-
-// fn.bind(obj, 5)(3, 4);
-// fn.bind(obj, 5, 6)(3, 4);
 
 test("call_apply_bind", () => {
-  expect(fn.bind(obj)(3, 4)).toBe(7);
+  /**
+   * 改变this 指向
+   */
+
+  function fn1() {
+    this.xxx = 3;
+    console.log(this);  //{ m: 0, xxx: 3 }
+    
+    return this;
+  }
+  expect(fn1.call(obj)).toBe(obj);
+
+
+  /**
+   * 调用方式
+   */
+  function fn2(a, b) {
+    this.xxx = 3;
+    console.log(a, b, this, arguments.length);
+    return a + b;
+  }
+  expect(fn2.call(obj, 3, 4)).toBe(7);
+  expect(fn2.apply(obj, [3, 4])).toBe(7);
+  expect(fn2.bind(obj, 3, 4)()).toBe(7);
+
+
+  /**
+   * 继承 子类直接使用父类方法
+   */
+  function Animal(){
+    this.eat=function(){
+      return '吃东西';
+    }
+  }
+  function Cat(){
+    Animal.call(this)
+  }
+  let cat=new Cat()
+  expect(cat.eat()).toBe('吃东西');
+
+
 });
