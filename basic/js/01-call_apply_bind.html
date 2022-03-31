@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * 原生实现
+       */
+      Function.prototype.call = function (thisArg, ...argArray) {
+        if (thisArg === null || thisArg === undefined) {
+          thisArg = window;
+        }
+
+        const specialMethod = Symbol("anything");
+        thisArg[specialMethod] = this;
+        const result = thisArg[specialMethod](...argArray);
+        delete thisArg[specialMethod];
+
+        return result;
+      };
+      const obj = {
+        m: 0,
+      };
+
+      function fn1() {
+        this.xxx = 3;
+        return this;
+      }
+      function fn2(a, b) {
+        this.xxx = 3;
+        console.log(a, b, this, arguments.length);
+        return a + b;
+      }
+      console.log(fn1.call(obj));
+      console.log(fn2.call(obj, 3, 4));
+
+      fn2.apply(obj, [3, 4]);
+      fn2.bind(obj, 3, 4)();
+
+
+     /**
+       * 使用 call 方法调用匿名函数
+       */
+       var animals = [
+        { species: 'Lion', name: 'King' },
+        { species: 'Whale', name: 'Fail' }
+      ];
+
+      for (var i = 0; i < animals.length; i++) {
+        (function(i) {
+          this.print = function() {
+            console.log('#' + i + ' ' + this.species
+                        + ': ' + this.name);
+          }
+          this.print();
+        }).call(animals[i], i);
+      }
+
+
+    </script>
+  </body>
+</html>

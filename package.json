@@ -9,7 +9,7 @@
     "serve": "vitepress serve .",
     "register:components": "vitepress-rc",
     "deploy": "yarn build && bash deploy.sh",
-    "test":"vitest"
+    "test": "vitest"
   },
   "devDependencies": {
     "vitepress": "^0.22.3",
@@ -19,7 +19,9 @@
   "dependencies": {
     "@types/node": "^17.0.21",
     "@vueuse/core": "^8.1.2",
+    "codemirror-editor-vue3": "^2.0.6",
     "vite": "^2.8.6",
-    "vite-plugin-restart": "^0.1.1"
+    "vite-plugin-restart": "^0.1.1",
+    "vue-codemirror": "^4.0.6"
   }
 }

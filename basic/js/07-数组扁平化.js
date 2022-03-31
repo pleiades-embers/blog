@@ -1,16 +1,16 @@
 var arr = [0, 11, [20, 5, [20, 0], 0, 11], 20, 5];
 
 function flatten1(arr){
-    let reuslt=[]
+    let result=[]
 
     arr.forEach(item=>{
         if(Array.isArray(item)){
-            reuslt=reuslt.concat(flatten1(item)) 
+            result=result.concat(flatten1(item)) 
         }else{
-            reuslt=reuslt.concat(item)
+            result=result.concat(item)
         }
     })
-    return reuslt
+    return result
 }
 
 

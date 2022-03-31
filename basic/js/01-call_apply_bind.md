@@ -10,7 +10,7 @@ function fn1() {
   this.xxx = 3;
   console.log(this); //{ m: 0, xxx: 3 }
 
-  return this; // 正常情况下 this 输出 window 或者 undefined
+  return this; // 如果这个函数处于非严格模式下，则指定为 null 或 undefined 时会自动替换为指向全局对象
 }
 
 expect(fn1.call(obj)).toBe(obj);
@@ -50,9 +50,38 @@ let cat = new Cat();
 expect(cat.eat()).toBe("吃东西");
 ```
 
+使用 call 方法调用匿名函数
+
+```javascript
+var animals = [
+  { species: "Lion", name: "King" },
+  { species: "Whale", name: "Fail" },
+];
+for (var i = 0; i < animals.length; i++) {
+  (function (i) {
+    this.print = function () {
+      console.log("#" + i + " " + this.species + ": " + this.name);
+    };
+    this.print();
+  }.call(animals[i], i));
+}
+```
+
 ### 手写源码
 
+```javascript
+Function.prototype.call = function (thisArg, ...argArray) {
+  if (thisArg === null || thisArg === undefined) {
+    thisArg = window;
+  }
+  const specialMethod = Symbol("anything");
+  thisArg[specialMethod] = this;
+  const result = thisArg[specialMethod](...argArray);
+  delete thisArg[specialMethod];
 
+  return result;
+};
+```
 
 <!-- ### code-surfer -->
 
@@ -62,3 +91,6 @@ expect(cat.eat()).toBe("吃东西");
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe> -->
+
+
+

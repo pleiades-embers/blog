@@ -11,6 +11,7 @@ export const nav = [
     text: "基本功",
     items: [
       { text: "前端必会", link: "/basic/js/01-call_apply_bind" },
+ 
       // { text: "extend", link: "/basic/extend" },
       // { text: "js算法", link: "/basic/arithmetic" },
       // { text: "js题", link: "/basic/topic" },

@@ -1,15 +1,6 @@
 import { test, expect } from "vitest";
 
-/**
- * 原生实现
- */
-Function.prototype.call=function(){
 
-  const self=this
-  return function(){
-    self()
-  }
-}
 
 const obj = {
   m: 0,
