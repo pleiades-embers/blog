@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@stackblitz/sdk': ^1.6.0
   '@types/node': ^17.0.21
   '@vueuse/core': ^8.1.2
   codemirror: ^5.65.2
@@ -13,6 +14,7 @@ specifiers:
   vue-codemirror: ^4.0.6
 
 dependencies:
+  '@stackblitz/sdk': 1.6.0
   '@types/node': 17.0.21
   '@vueuse/core': 8.1.2
   codemirror: 5.65.2
@@ -242,6 +244,10 @@ packages:
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
+
+  /@stackblitz/sdk/1.6.0:
+    resolution: {integrity: sha512-PPB9m1zywojv6sOGSiHv+tvnb4Zc00Jce9yjUG0BzTymUdFf9AP+gKJRlc0iq9vbEEEXfYv1bgKa5KTn4gAzbQ==}
+    dev: false
 
   /@types/chai-subset/1.3.3:
     resolution: {integrity: sha512-frBecisrNGz+F4T6bcc+NLeolfiojh5FxW2klu669+8BARtyQv2C/GkNW6FUodVe4BroGMP/wER/YDGc7rEllw==}
