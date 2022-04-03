@@ -9,4 +9,4 @@ function difference(arr1,arr2){
     return result
 }
 
-console.log(difference([1,3,5,7],[5,8]))
+console.log(difference())
