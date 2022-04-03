@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./app.c5383ada.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/other/nuxt\u7B14\u8BB0.md"}',a={};function o(c,s,n,_,p,d){return r(),t("div")}var l=e(a,[["render",o]]);export{f as __pageData,l as default};

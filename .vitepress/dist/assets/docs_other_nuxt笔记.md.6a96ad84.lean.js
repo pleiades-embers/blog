@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as r}from"./app.2fc076cc.js";const f='{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/other/nuxt\u7B14\u8BB0.md"}',a={};function o(c,n,s,_,p,d){return r(),e("div")}var l=t(a,[["render",o]]);export{f as __pageData,l as default};
