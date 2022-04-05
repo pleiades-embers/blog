@@ -2,8 +2,8 @@ export const nav = [
   {
     text: "前端特效",
     items: [
-      { text: "css", link: "/css/" },
-      { text: "gasp.js", link: "/css/gasp" },
+      { text: "css", link: "/css/basic/01-aspect-ratio" },
+      { text: "gasp.js", link: "/css/gasp/01-Liquid Distortion Slider" },
       { text: "anime.js", link: "/css/anime" },
     ],
   },
