@@ -33,4 +33,26 @@ export const sidebar = {
       ],
     },
   ],
+  '/docs/react/basic':[
+    {
+      text: 'react',
+      children: [
+        { text: "life cycle", link: "/docs/react/basic/life-cycle" },
+        { text: "react", link: "/docs/react/basic/react" },
+        { text: "render", link: "/docs/react/basic/render" },
+        { text: "setState", link: "/docs/react/basic/setState" },
+        { text: "state_props", link: "/docs/react/basic/state_props" },
+        { text: "super()_super(props)", link: "/docs/react/basic/super()_super(props)" },
+      ],
+    },
+  ],
+  '/docs/react/antd':[
+    {
+      text: 'antd',
+      children: [
+        { text: "Alert", link: "/docs/react/antd/Alert" },
+      ],
+    },
+  ]
+  
 };
