@@ -26,7 +26,7 @@ export const sidebar = {
   ],
   '/basic': [
     {
-      text: '前端必会',
+      text: '基础操作',
       children: [
         { text: "call_apply_bind", link: "/basic/js/01-call_apply_bind" },
         { text: "数组操作", link: "/basic/js/02-数组操作" },
@@ -51,6 +51,15 @@ export const sidebar = {
       text: 'antd',
       children: [
         { text: "Alert", link: "/docs/react/antd/Alert" },
+      ],
+    },
+  ],
+  '/docs/minecraft/':[
+    {
+      text: 'minecraft模组开发',
+      children: [
+        { text: "搭建vscode模组开发环境", link: "/docs/minecraft/01-搭建vscode模组开发环境" },
+        { text: "物品", link: "/docs/minecraft/02-物品" },
       ],
     },
   ]
