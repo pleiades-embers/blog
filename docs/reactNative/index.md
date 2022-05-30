@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
 
 示例演示：在 RN 中两种应用样式的方法：
 
-## ![image-20200420145754762](./images/image-20200420145754762.png)
+![image-20200420145754762](./images/image-20200420145754762.png)
 
 
 

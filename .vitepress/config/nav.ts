@@ -1,6 +1,6 @@
 export const nav = [
   {
-    text: "前端特效",
+    text: "web特效",
     items: [
       { text: "css", link: "/css/basic/01-aspect-ratio" },
       { text: "gasp.js", link: "/css/gasp/01-Liquid Distortion Slider" },
@@ -8,9 +8,9 @@ export const nav = [
     ],
   },
   {
-    text: "基本功",
+    text: "js",
     items: [
-      { text: "前端必会", link: "/basic/js/01-call_apply_bind" },
+      { text: "基础操作", link: "/basic/js/01-call_apply_bind" },
 
       // { text: "extend", link: "/basic/extend" },
       // { text: "js算法", link: "/basic/arithmetic" },
@@ -46,11 +46,11 @@ export const nav = [
       // { text: "其他", link: "/docs/other" },
     ],
   },
-  // {
-  //   text: "娱乐",
-  //   items: [
-  //     { text: "GTNH(格雷科技新视野)", link: "/yule/gtnh"},
-  //     { text: "美剧", link: "/yule/meiju/" },
-  //   ],
-  // },
+  {
+    text: "娱乐",
+    items: [
+      { text: "minecraft模组开发", link: "/docs/minecraft/01-搭建vscode模组开发环境" },
+      { text: "GTNH(格雷科技新视野)", link: "/yule/gtnh"},
+    ],
+  },
 ];
