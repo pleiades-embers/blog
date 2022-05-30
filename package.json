@@ -20,6 +20,7 @@
     "@stackblitz/sdk": "^1.6.0",
     "@types/node": "^17.0.21",
     "@vueuse/core": "^8.1.2",
+    "lodash": "^4.17.21",
     "vite": "^2.8.6",
     "vite-plugin-restart": "^0.1.1"
   }
