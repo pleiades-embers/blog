@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o}from"./chunks/framework.82dd189e.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/other/nuxt笔记.md","filePath":"docs/other/nuxt笔记.md"}'),r={name:"docs/other/nuxt笔记.md"};function a(n,s,c,d,_,p){return e(),o("div")}const f=t(r,[["render",a]]);export{m as __pageData,f as default};

@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.82dd189e.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/other/瀑布流.md","filePath":"docs/other/瀑布流.md"}'),p={name:"docs/other/瀑布流.md"},o=l("",2),e=[o];function c(t,r,E,y,i,F){return n(),a("div",null,e)}const A=s(p,[["render",c]]);export{h as __pageData,A as default};

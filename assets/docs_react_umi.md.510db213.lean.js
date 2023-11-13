@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as o}from"./chunks/framework.82dd189e.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/react/umi.md","filePath":"docs/react/umi.md"}'),p={name:"docs/react/umi.md"},l=o("",4),e=[l];function t(c,r,i,E,y,d){return a(),n("div",null,e)}const _=s(p,[["render",t]]);export{h as __pageData,_ as default};
