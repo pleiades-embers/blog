@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CheerpJ test</title>
+    <script src="https://cjrtnc.leaningtech.com/3.0rc1/cj3loader.js"></script>
+  </head>
+  <body>
+    <script>
+      (async function () {
+        await cheerpjInit();
+        cheerpjCreateDisplay(800, 600);
+        const lib2 = await cheerpjRunLibrary("/app/appliedenergistics2-forge-15.0.15-api.jar");
+        const GridEvent = await lib2.appeng.api.networking.events.GridEvent;
+        const counter = await new VariantCounter();
+        console.log(counter,"counter")
+
+
+        const lib = await cheerpjRunLibrary("");
+        const System = await lib.java.lang.System;
+        await System.out.println("Hello from Java")
+
+        const res=await cheerpjRunJar('/app/TextDemo.jar');
+      })();
+    </script>
+  </body>
+</html>

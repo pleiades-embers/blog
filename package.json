@@ -1,0 +1,29 @@
+{
+  "name": "embers",
+  "version": "1",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve .",
+    "register:components": "vitepress-rc",
+    "deploy": "yarn build && bash deploy.sh",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.22",
+    "vitest": "^0.29.2"
+  },
+  "dependencies": {
+    "@stackblitz/sdk": "^1.8.2",
+    "@types/node": "^17.0.21",
+    "@vueuse/core": "^9.3.0",
+    "jest": "^29.6.3",
+    "lodash": "^4.17.21",
+    "vite": "^4.1.4",
+    "vite-plugin-restart": "^0.3.1",
+    "vitepress-theme-demoblock": "^3.0.3"
+  }
+}

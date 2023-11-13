@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: deploy
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - name: Install
+        run:  yarn
+      - name: Build
+        run:  yarn build
+      - name: Check Build
+        run: |
+          sudo -i
+          sudo chown -R $USER ./.vitepress/dist
+      - name: Docs Github Action
+        id: deployStatic
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            TARGET_REPO: pleiades-embers/blog
+            TARGET_BRANCH: gh-pages
+            BUILD_SCRIPT: yarn && yarn build
+            BUILD_DIR: .vitepress/dist/
