@@ -5,6 +5,7 @@
     "lib": ["ESNext", "DOM", "DOM.Iterable", "webworker"],
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "moduleDetection": "force",
     "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -17,6 +18,9 @@
       "@/*": ["./.vitepress/theme/*"],
       "preact/*": ["./.vitepress/theme/empty.d.ts"]
     },
+  },
+  "ts-node":{
+    "esm":true
   },
   "include": [
     ".vitepress/**/*.ts",
