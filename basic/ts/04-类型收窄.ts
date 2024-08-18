@@ -7,4 +7,10 @@ const routes={
 
 const goToRoute = (r:'/'| '/admin' | '/users')=>{}
 
+
 goToRoute(routes.admin)
+
+
+// 如何拿到值的类型
+// type Router=typeof routes[keyof typeof routes]
+
