@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function convertToISO(dateString) {  
+            // 替换格式中的空格为 'T'，去除 'UTC' 并调整时区格式
+            return dateString.replace(' ', 'T')
+                .replace(' UTC', '')
+                .replace(/(\+\d{2})(\d{2})/, '$1:$2')
+                .replace(/\.\d+/, '')  // 移除毫秒
+                .replace(/\s+/, '');  // 移除毫秒
+        }
+        console.log(dayjs('2024-09-26 22:00:46+0000').format('YYYY-MM-DD HH:mm:ssZZ'))  
+        console.log(dayjs(convertToISO('2024-09-26 22:00:46.047 +0000 UTC')).format('YYYY-MM-DD HH:mm:ss'))
+        console.log(dayjs('2024-09-26T22:00:46.047 +00:00').format('YYYY-MM-DD HH:mm:ss'))
+        //safari 输出
+        // [Log] 2024-09-27 06:00:46+0800 (01-时区字符串.html, line 23)
+        // [Log] 2024-09-27 06:00:46 (01-时区字符串.html, line 24)
+        // [Log] Invalid Date (01-时区字符串.html, line 25)
+    </script>
+</body>
+
+</html>
