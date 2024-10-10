@@ -1,5 +1,9 @@
 {
     "cSpell.words": [
         "vitepress"
-    ]
+    ],
+    "files.exclude": {
+        "node_modules/**": true,
+        "package/node_modules/**": true
+    }
 }
