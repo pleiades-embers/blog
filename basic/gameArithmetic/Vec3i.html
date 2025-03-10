@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas 3D Points with Vec3I</title>
+    <style> canvas { border: 1px solid #000; } </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script>
+        class Vec3I {
+            constructor(x, y, z) {
+                this.x = x | 0; // 强制转为整数 
+                this.y = y | 0;
+                this.z = z | 0;
+            }
+            project(canvasWidth, canvasHeight) {
+                // 正交投影至2D画布 
+                return {
+                    x: this.x * 30 + canvasWidth/2,
+                    y: this.y * 30 + canvasHeight/2,
+                    size: Math.max(5  - this.z/2, 2) // Z轴影响点大小 
+                };
+            }
+        }
+ 
+        const canvas = document.getElementById('canvas'); 
+        const ctx = canvas.getContext('2d'); 
+        const points = [
+            new Vec3I(-3, 2, 0),
+            new Vec3I(2, -1, 2),
+            new Vec3I(0, 0, -1)
+        ];
+ 
+        function draw() {
+            ctx.clearRect(0,  0, canvas.width,  canvas.height); 
+            points.forEach(point  => {
+                const proj = point.project(canvas.width,  canvas.height); 
+                ctx.beginPath(); 
+                ctx.arc(proj.x,  proj.y, proj.size,  0, Math.PI*2);
+                ctx.fillStyle  = `rgba(255,0,0,${1 - point.z/10})`;
+                ctx.fill(); 
+            });
+        }
+        draw();
+ 
+        // 点击动态添加随机整数坐标点 
+        canvas.addEventListener('click',  () => {
+            points.push(new  Vec3I(
+                Math.floor(Math.random()*10  - 5),
+                Math.floor(Math.random()*10  - 5),
+                Math.floor(Math.random()*5) 
+            ));
+            draw();
+        });
+    </script>
+</body>
+</html>
+ 

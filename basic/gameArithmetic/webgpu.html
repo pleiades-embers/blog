@@ -1,0 +1,58 @@
+<canvas id="webgpuCanvas" width="800" height="600"></canvas>
+ 
+<script>
+// 初始化 WebGPU 
+async function initWebGPU() {
+  const canvas = document.getElementById('webgpuCanvas'); 
+  const context = canvas.getContext('webgpu'); 
+ 
+  // 配置 WebGPU 上下文 
+  const adapter = await navigator.gpu.requestAdapter(); 
+  const device = await adapter.requestDevice(); 
+  const format = navigator.gpu.getPreferredCanvasFormat(); 
+  
+  context.configure({ 
+    device: device,
+    format: format,
+    alphaMode: 'premultiplied'
+  });
+ 
+  return { device, context, canvas };
+}
+ 
+// 绑定点击事件 
+function bindClickEvent(canvas) {
+  canvas.addEventListener('click',  (event) => {
+    const rect = canvas.getBoundingClientRect(); 
+    const x = event.clientX  - rect.left; 
+    const y = event.clientY  - rect.top; 
+    
+    // 坐标转换为 WebGPU 视口（假设视口与 Canvas 尺寸一致）
+    const normalizedX = x / canvas.width; 
+    const normalizedY = y / canvas.height; 
+    
+    console.log(`Clicked  at (${x}, ${y}) [Normalized: ${normalizedX}, ${normalizedY}]`);
+  });
+}
+ 
+// 主流程 
+async function main() {
+  const { device, context, canvas } = await initWebGPU();
+  bindClickEvent(canvas);
+  
+  // 渲染逻辑（示例：清屏为红色）
+  const encoder = device.createCommandEncoder(); 
+  const pass = encoder.beginRenderPass({ 
+    colorAttachments: [{
+      view: context.getCurrentTexture().createView(), 
+      clearValue: [1, 0, 0, 1], // 红色 
+      loadOp: 'clear',
+      storeOp: 'store'
+    }]
+  });
+  pass.end(); 
+  device.queue.submit([encoder.finish()]); 
+}
+ 
+main();
+</script>
